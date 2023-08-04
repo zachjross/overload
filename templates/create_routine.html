@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} 
+
+{% block content %}
+<style>
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    form {
+        font-size: medium;
+        text-align: center;
+    }
+</style>
+<h1>Create Routine</h1>
+<form action="/create/workout" method="POST">
+    <label for="routine_title">Routine Title:</label><br>
+    <input type="text" id="routine_title" name="routine_title"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+            
+{% endblock %} 

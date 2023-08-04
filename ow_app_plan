@@ -1,0 +1,45 @@
+Home Page:
+- login/password
+- register page
+
+Register Page:
+- First/Last Name
+- Email Address
+- Username
+- Password/Password Confirm
+
+Routines Page:
+- List of Created Routines
+  (Stored Created Routines,Delete Function,Rename Function,Duplicate Function)
+- Routines
+  (Links To Workouts Created)
+- Create New Routine Button
+  (Pull Up Routine Naming Form, Save the Routine Name and Create New Link on Routines Page)
+- Add New Workout Within Stored Routine
+  (Should Take you to Create Workouts Form)
+- Edit Button
+  (allows the user to edit workouts)
+
+  
+Create Workouts Form:
+- Workout Title
+- Exercise
+- Sets
+- Reps
+- Add More Exercises Button
+ (Have another row of Exercise,Sets, and Reps input)
+ - Save the User Input To Routine Id Created With
+
+ Workouts Page:
+- Display Stored Workouts
+- Empty Column For New Reps Input
+- Display Previous Reps Hit
+- Display Previous Weight Used
+- Display New Rep Target In Red
+- If reps hit x amount auto incriment the weight 5lbs
+- Home Button
+ (returns user to routines page)
+
+
+
+

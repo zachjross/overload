@@ -1,0 +1,26 @@
+{% extends 'layout.html' %} 
+
+{% block content %}
+<head>
+<style>
+    form {
+        text-align: center;
+    }
+</style>
+</head>
+<form action="/action_page.php">
+    <fieldset>
+        <h1>Register</h1>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pword">Password:</label><br>
+        <input type="password" id="pword" name="pword"><br>
+        <label for="rpword">Repeat Password:</label><br>
+        <input type="password" id="rpword" name="pword"><br>
+    </fieldset>
+</form>
+{% endblock %} 

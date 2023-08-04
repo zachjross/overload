@@ -1,0 +1,31 @@
+{% extends 'layout.html' %} 
+
+{% block content %} 
+<style>
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: black;
+    }
+    table,th,td {
+        border: 3px solid black;
+        padding: 10px;
+        width: 50%;
+        border-style: inset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<h1>Workouts</h1>
+<a href="/{{workout}}/add/workout" style="text-decoration: none; color: black; position: relative;">Add Workout</a>
+<a href="/routines" style="text-decoration: none; color: black; position: relative; left: 1150px;">Home</a>
+<div>
+    <ul>
+        {% for key, value in data.items() %} 
+        <li>
+            <a href="/workout/{{workout}}/{{key}}" style="text-decoration: none; color: black;">{{key}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %} 

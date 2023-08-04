@@ -1,0 +1,28 @@
+{% extends 'layout.html' %} 
+
+{% block content %} 
+<style>
+    h1 {
+        font-size: x-large;
+        text-align: center;
+    }
+    form {
+        font-size: medium;
+        text-align: center;
+    }
+</style>
+<h1>Create Workout</h1>
+<form action="/workouts/{{name}}" method="POST">
+    <label for="workout_title">Workout Title</label><br>
+    <input type="text" id="workout_title" name="workout_title"><br>
+    <label class="ex" for="exercise">Exercise</label><br> 
+    <input class="in" type="text" id="exercise" name="exercise"><br>
+    <label class="ex" for="sets">Sets</label><br>
+    <input class="in" type="int" id="sets" name="sets"><br>
+    <label class="ex" for="reps">Reps</label><br>
+    <input class="in" type="int" id="reps" name="reps"><br><br>
+    <input type="submit" Value="Submit">
+</form>
+
+
+{% endblock %}

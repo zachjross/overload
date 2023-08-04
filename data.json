@@ -1,0 +1,34 @@
+{
+    '12WeekHypertrophyProgram': {
+        'workouts': {
+            'chest_day':{
+                'exercise':'bench','sets':3,'reps':12
+            },
+            'back_day':{
+                'exercise':'pull ups','sets':3,'reps':12
+            },
+            'leg_day':{
+                'exercise':'squats','sets':3,'reps':12
+            },
+    
+        },
+    },
+
+    'HIIT_Routine': {
+        'workouts': {
+            'upper':{
+                'exercise':'burpees','sets':2, 'time': 2
+            },
+            'lower':{
+                'exercise': 'box jumps', 'sets':2, 'reps': 25
+            },
+        },
+
+
+
+    }
+
+
+
+
+}

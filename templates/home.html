@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<head>
+    <style>
+        body {background-image: url({{user_image}});
+                background-repeat: no-repeat;
+                background-size: cover;}
+    </style>
+</head>
+<body>
+    <a href="{{url_for('register')}}" style="text-decoration: none; color: black; position: relative; left: 1150px;">Register</a>
+<div class="jumbotron text-center">
+    <h1 style="font-size:60px;"><cite>OW</cite></h1>
+    <hr>
+    <form action="/routines" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" style="border-color: brown;" value="Login"><br>
+    </form>
+</div>
+</body>
+
+{% endblock %}
